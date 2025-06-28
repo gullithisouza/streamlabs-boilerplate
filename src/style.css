@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  text-shadow: 0 0 1px #000, 0 0 2px #000;
+  background: transparent;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5em;
+  /* color: #FAFAFA; */
+  color: { text_color}
+}
+
+.colon {
+  display: none;
+}
+
+#log {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px 10px;
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#log>div {
+  animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease 15000ms forwards;
+  -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease 15000ms forwards;
+}
+
+#log>div.deleted {
+  visibility: hidden;
+}
+
+#log .emote {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+
+#log .emote img {
+  display: inline-block;
+  height: 1em;
+  opacity: 0;
+}
+
+#log .message,
+#log .meta {
+  vertical-align: top;
+  display: flex;
+}
+
+.name{
+  background: transparent;
+  border-radius: .3rem;
+  padding: 0 .4rem;
+  border: dashed 2px;
+  text-transform: uppercase;
+}
+
+[data-from] {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  border: solid 2px;
+  border-radius: .7rem;
+  width: auto;
+  position: relative;
+  padding: .4rem .8rem;
+  background-image: linear-gradient(150deg, #F2CB13, transparent);;
+}
+
+#log .meta {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#log .message {
+  word-wrap: break-word;
+  width: 100%;
+  color: #fff;
+}
+
+.badges{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: .3rem;
+}
+
+.badge {
+  display: inline-block;
+  position: relative;
+  height: 1em;
+  vertical-align: middle;
+  top: 0;
+}
+
+
