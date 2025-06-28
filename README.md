@@ -1,4 +1,3 @@
-```markdown
 # 💬 streamlabs-boilerplate
 
 > Um boilerplate simples para desenvolvedores customizarem facilmente o **widget de chat** do Streamlabs.
@@ -7,12 +6,12 @@ Este repositório serve como ponto de partida para personalizar a aparência e c
 
 ## 📁 Estrutura do Projeto
 ```
-
 index.html        # Estrutura base do widget de chat
 package.json      # Scripts e dependências opcionais (Vite)
 src/
 ├── main.js       # Lógica de manipulação do chat
 └── style.css     # Estilos visuais e animações
+```
 
 ## 🚀 Como Usar
 
